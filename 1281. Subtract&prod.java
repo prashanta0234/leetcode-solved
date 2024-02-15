@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
+
 class Solution {
     public int subtractProductAndSum(int n) {
         int sum=0;
