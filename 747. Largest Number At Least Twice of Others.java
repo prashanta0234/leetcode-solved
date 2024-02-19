@@ -1,0 +1,31 @@
+// https://leetcode.com/problems/largest-number-at-least-twice-of-others/description/
+
+// approach one
+class Solution
+{
+    public  int dominantIndex(int[] nums) {
+      int max=0;
+      int maxIndex=0;
+      for(int i=0;i<nums.length;i++){
+          if(nums[i]>max){
+              max=nums[i];
+              maxIndex=i;
+          }
+      }
+      int half=max/2;
+      boolean findHalf=false;
+      for(int i=0;i<nums.length;i++){
+          if(nums[i]==max){
+              continue;
+          }
+          if(nums[i]>half){
+              return -1;
+          }
+      }
+
+    
+          return maxIndex;
+     
+    }
+    
+}
