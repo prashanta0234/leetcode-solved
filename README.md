@@ -1,5 +1,5 @@
-##Leet code solved problem in JAVA##
+##Leet code solved problems in JAVA##
 
 I am just storing solved leetcode problems by myself.
 
-I always tried to solve problem without using built-in methods.
+I always try to solve problems without using built-in methods.
