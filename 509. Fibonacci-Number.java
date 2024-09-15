@@ -30,3 +30,33 @@ class Solution {
         return fib(n-1)+fib(n-2);
     }
 }
+
+
+// applying DP
+
+// it beats 100%
+
+class Solution {
+    public int fib(int n) {
+        int[] dpArray=new int[n+1];
+        Arrays.fill(dpArray,-1);
+        return halper(n,dpArray);
+    }
+
+    public int halper(int n, int[] array){
+        if(n==1||n==0){
+            return n;
+        }
+
+        if(array[n]!=-1){
+            return array[n];
+        }
+
+        int a= halper(n-1,array);
+        int b=halper(n-2,array);
+
+        array[n]=a+b;
+
+        return a+b;
+    }
+}
